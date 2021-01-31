@@ -10,7 +10,7 @@ def bucket():
     s3 = boto3.client("s3")
     buckets = s3.list_buckets()
     click.echo(
-            click.style(f"mybuckets: {bucket}", bg="yellow", fg="blue")
+            click.style(f"mybuckets: {buckets}", bg="yellow", fg="blue")
             )
             
 if __name__ == "__main__":
